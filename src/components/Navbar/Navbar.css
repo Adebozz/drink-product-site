@@ -1,0 +1,27 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0066;
+    padding: 0 20px;
+  }
+  
+  .navbar h1 {
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  

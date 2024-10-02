@@ -1,16 +1,14 @@
 // src/components/ThreeScene.jsx
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
-import { TextureLoader } from 'three';
-import { useLoader } from '@react-three/fiber';
-import assets from "../assets/assets";
+import React, { useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, useTexture } from "@react-three/drei";
 
-const RotatingBottle = () => {
+const RotatingBottle = ({ texturePath }) => {
   const bottleRef = useRef();
-  const texture = useTexture(assets.drink);
+  const texture = useTexture(texturePath);
 
   useFrame(() => {
-    bottleRef.current.rotation.y += 0.01;
+    bottleRef.current.rotation.y += 0.005;
   });
 
   return (
@@ -21,13 +19,13 @@ const RotatingBottle = () => {
   );
 };
 
-const ThreeScene = () => {
+const ThreeScene = ({ texturePath }) => {
   return (
-    <Canvas style={{ height: "100vh", background: "#ffdf00" }}>
+    <Canvas style={{ height: "500px", background: "#ffdf00" }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
-      <RotatingBottle />
-      <OrbitControls enableZoom={false} />
+      <RotatingBottle texturePath={texturePath} />
+      <OrbitControls enableZoom={true} />
     </Canvas>
   );
 };
