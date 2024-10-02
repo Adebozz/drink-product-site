@@ -1,8 +1,8 @@
 // src/components/ThreeScene.jsx
-import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useTexture } from "@react-three/drei";
-import * as THREE from "three";
+import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import { TextureLoader } from 'three';
+import { useLoader } from '@react-three/fiber';
 import assets from "../assets/assets";
 
 const RotatingBottle = () => {

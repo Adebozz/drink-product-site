@@ -1,6 +1,8 @@
-import React from "react";
-import ThreeScene from "./components/ThreeScene";
+// src/App.jsx
+import React, { Suspense, lazy } from "react";
 import './App.css';
+
+const ThreeScene = lazy(() => import("./components/ThreeScene"));
 
 const App = () => {
   return (
@@ -9,7 +11,9 @@ const App = () => {
         <h1>Welcome to DrinkWorld</h1>
         <p>Explore the best drinks in 3D</p>
       </header>
-      <ThreeScene />
+      <Suspense fallback={<div>Loading...</div>}>
+        <ThreeScene />
+      </Suspense>
     </div>
   );
 };
