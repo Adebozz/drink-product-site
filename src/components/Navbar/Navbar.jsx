@@ -1,19 +1,21 @@
 // src/components/Navbar.jsx
-import React from "react";
-import { Link } from "react-router-dom";
-import './Navbar.css';
+import React from 'react';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <h1>DrinkWorld</h1>
-      <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/products">Products</Link></li>
-        <li><Link to="/about-us">About Us</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
+    <AppBar position="static" style={{ backgroundColor: '#ff0066' }}>
+      <Toolbar>
+        <Typography variant="h6" style={{ flexGrow: 1 }}>
+          DrinkWorld
+        </Typography>
+        <Button color="inherit" component={Link} to="/">Home</Button>
+        <Button color="inherit" component={Link} to="/products">Products</Button>
+        <Button color="inherit" component={Link} to="/about-us">About Us</Button>
+        <Button color="inherit" component={Link} to="/contact">Contact</Button>
+      </Toolbar>
+    </AppBar>
   );
 };
 
