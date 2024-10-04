@@ -1,8 +1,8 @@
 // src/pages/ProductDetail.jsx
 import React from "react";
 import { useParams } from "react-router-dom";
-import products from "../data/products";
-import ThreeScene from "../components/ThreeScene";
+import products from "../../data/products";
+import ThreeScene from "../../components/ThreeScene";
 
 const ProductDetail = () => {
   const { id } = useParams();
