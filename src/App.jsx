@@ -1,13 +1,13 @@
 // src/App.jsx
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Navbar from "./components/Navbar";
+import Home from "./components/pages/Homes";
+import Products from "./components/pages/Products";
+import About from "./components/pages/About";
+import Contact from "./components/pages/Contact";
+import Navbar from "./components/Navbar/Navbar";
 import './App.css';
-import ProductDetail from "./pages/ProductDetail";
+import ProductDetail from "./components/pages/ProductDetails";
 
 
 const App = () => {
