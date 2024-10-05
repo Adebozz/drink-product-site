@@ -1,11 +1,11 @@
-// backend/products.js
+const assets = require("../src/assets/assets");
+
 module.exports = [
-    {
-      id: 1,
-      name: "Tropical Juice",
-      thumbnail: "/assets/tropical-juice-thumbnail.jpg",
-      texture: "/assets/tropical-juice-texture.jpg",
-    },
-    // Add more products
-  ];
-  
+  {
+    id: 1,
+    name: "Tropical Juice",
+    thumbnail: assets.tropical,  // Corrected syntax
+    texture: assets.tropical,    // Corrected syntax
+  },
+  // Add more products as needed
+];
