@@ -7,5 +7,11 @@ module.exports = [
     thumbnail: assets.tropical,  // Corrected syntax
     texture: assets.tropical,    // Corrected syntax
   },
+  {
+    id: 2,
+    name: "Berry Blast",
+    thumbnail: assets.drink,
+    texture: assets.drink,
+  },
   // Add more products as needed
 ];
