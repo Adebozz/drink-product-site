@@ -13,5 +13,11 @@ module.exports = [
     thumbnail: assets.drink,
     texture: assets.drink,
   },
+  {
+    id: 3,
+    name: "Caprison",
+    thumbnail: assets.caprison,
+    texture: assets.caprison,
+  },
   // Add more products as needed
 ];
