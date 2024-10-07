@@ -19,5 +19,9 @@ module.exports = [
     thumbnail: assets.caprison,
     texture: assets.caprison,
   },
+  {
+    id:4,
+    name: "biggie",
+  }
   // Add more products as needed
 ];
