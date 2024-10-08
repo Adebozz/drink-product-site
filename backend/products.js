@@ -22,6 +22,7 @@ module.exports = [
   {
     id:4,
     name: "biggie",
+    thumbnail: "",
   }
   // Add more products as needed
 ];
