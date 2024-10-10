@@ -23,6 +23,7 @@ module.exports = [
     id:4,
     name: "biggie",
     thumbnail: assets.drink,
+    texture: assets.drink,
     
   }
   // Add more products as needed
