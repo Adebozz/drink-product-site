@@ -26,6 +26,13 @@ module.exports = [
     texture: assets.mocktail,
     
   },
+  {
+    id:5,
+    name: "cocktail",
+    thumbnail: assets.cocktail,
+    texture: assets.cocktail,
+    
+  },
   
   // Add more products as needed
 ];
