@@ -21,7 +21,7 @@ module.exports = [
   },
   {
     id:4,
-    name: "biggie",
+    name: "mocktail",
     thumbnail: assets.mocktail,
     texture: assets.mocktail,
     
