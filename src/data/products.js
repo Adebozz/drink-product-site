@@ -34,6 +34,13 @@ const products = [
       texture: assets.cocktail,
       
     },
+    {
+      id:6,
+      name: "cocktails",
+      thumbnail: assets.cocktail,
+      texture: assets.cocktail,
+      
+    },
     // Add more products as needed
   ];
   
