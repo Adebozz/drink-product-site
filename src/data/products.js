@@ -36,7 +36,7 @@ const products = [
     },
     {
       id:6,
-      name: "cocktails",
+      name: "cocktail",
       thumbnail: assets.cocktail,
       texture: assets.cocktail,
       
