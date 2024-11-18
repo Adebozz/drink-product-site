@@ -15,9 +15,9 @@ module.exports = [
   },
   {
     id: 3,
-    name: "Berry Blast",
-    thumbnail: assets.drink,
-    texture: assets.drink,
+    name: "Cocktail",
+    thumbnail: assets.cocktail,
+    texture: assets.cocktail,
   },
 
   
