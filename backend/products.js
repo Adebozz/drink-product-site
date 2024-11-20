@@ -15,7 +15,7 @@ module.exports = [
   },
   {
     id: 3,
-    name: "Cocktail",
+    name: "Cocktails",
     thumbnail: assets.cocktail,
     texture: assets.cocktail,
   },
